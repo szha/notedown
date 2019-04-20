@@ -1,7 +1,10 @@
-*Python 2/3 and IPython 4 / Jupyter compatible!* <a href='https://travis-ci.org/aaren/wavelets'> <img src='https://secure.travis-ci.org/aaren/wavelets.png?branch=master'></a>
+This is a fork of [notedown](https://github.com/aaren/notedown) with the
+following two changes
 
-Convert IPython Notebooks to markdown (and back)
-------------------------------------------------
+1. Don't force hard breaks for long lines. Such breaks will add additional
+   spaces that are not suitable for some languages such as Chinese
+1. In default use strict match instead of fenced, so we can write some other
+   code blocks (e.g. bash) and notedown will not put it as python code blocks.
 
 [notedown] is a simple tool to create [IPython notebooks][ipython]
 from markdown (and r-markdown).
