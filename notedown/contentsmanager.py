@@ -8,6 +8,8 @@ try:
     import notebook.transutils
     from notebook.services.contents.filemanager import FileContentsManager
 except ImportError:
+    from jupyter_server.services.contents.filemanager import FileContentsManager
+except ImportError:
     from IPython.html.services.contents.filemanager import FileContentsManager
 
 from .main import ftdetect, convert
